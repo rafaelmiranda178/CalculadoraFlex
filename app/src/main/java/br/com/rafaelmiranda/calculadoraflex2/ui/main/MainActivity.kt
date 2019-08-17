@@ -1,8 +1,8 @@
-package br.com.rafaelmiranda.calculadoraflex.ui.main
+package br.com.rafaelmiranda.calculadoraflex2.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import br.com.rafaelmiranda.calculadoraflex.R
+import br.com.rafaelmiranda.calculadoraflex2.R
 
 class MainActivity : AppCompatActivity() {
 

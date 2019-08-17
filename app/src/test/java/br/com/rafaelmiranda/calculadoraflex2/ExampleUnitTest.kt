@@ -1,4 +1,4 @@
-package br.com.rafaelmiranda.calculadoraflex
+package br.com.rafaelmiranda.calculadoraflex2
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package br.com.rafaelmiranda.calculadoraflex.ui.splash
+package br.com.rafaelmiranda.calculadoraflex2.ui.splash
 
 import android.content.Context
 import android.content.Intent
@@ -7,8 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.animation.AnimationUtils
-import br.com.rafaelmiranda.calculadoraflex.R
-import br.com.rafaelmiranda.calculadoraflex.ui.login.LoginActivity
+import br.com.rafaelmiranda.calculadoraflex2.R
+import br.com.rafaelmiranda.calculadoraflex2.ui.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity() {
@@ -51,9 +51,7 @@ class SplashActivity : AppCompatActivity() {
         ivLogo.startAnimation(anim)
         //Chama a próxima tela após 3,5 segundos definido na SPLASH_DISLAY_LENGTH
         Handler().postDelayed({
-            val proximaTela = Intent(this@SplashActivity, LoginActivity::class.java)
-            startActivity(proximaTela)
-            finish()
+            showLogin()
         }, TEMPO_AGUARDO_SPLASHSCREEN)
 
     }
